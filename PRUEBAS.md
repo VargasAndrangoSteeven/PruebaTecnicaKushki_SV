@@ -389,26 +389,6 @@ docker exec analizador-backend pytest \
 
 ---
 
-## 🎓 Buenas Prácticas
-
-### Backend
-
-1. ✅ **Usa fixtures** para datos de prueba reutilizables
-2. ✅ **Aísla las pruebas** - cada prueba debe ser independiente
-3. ✅ **Usa bases de datos en memoria** - SQLite para pruebas
-4. ✅ **Nombra descriptivamente** - `test_registro_exitoso` vs `test1`
-5. ✅ **Documenta las pruebas** - explica qué se está probando
-
-### Frontend
-
-1. ✅ **Prueba comportamiento, no implementación**
-2. ✅ **Usa queries semánticas** - `getByRole`, `getByLabelText`
-3. ✅ **Simula interacciones del usuario** - `fireEvent`, `userEvent`
-4. ✅ **Espera cambios asíncronos** - `waitFor`, `findBy...`
-5. ✅ **Mock servicios externos** - APIs, localStorage, etc.
-
----
-
 ## 🚀 Siguiente Paso: Ejecutar Pruebas
 
 ### Backend:
