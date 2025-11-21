@@ -825,40 +825,6 @@ Para una interfaz gráfica, puedes usar:
 - **TablePlus**: https://tableplus.com/
 
 Simplemente abre el archivo: `backend/datos/app.db`
-
----
-
-## 🎯 Características Únicas del Proyecto
-
-### 1. **Captcha Matemático Personalizado**
-- Operaciones aleatorias (suma, resta, multiplicación)
-- Expiración automática de 5 minutos
-- Sistema de intentos (máximo 3)
-- Tokens únicos y no reutilizables
-
-### 2. **Modal de Bienvenida**
-- Solo aparece en el primer inicio de sesión
-- Mensaje personalizado del desarrollador
-- Almacenamiento en localStorage por usuario
-- Diseño atractivo con Material-UI
-
-### 3. **Traducción Inteligente**
-- Etiquetas traducidas al español con Google Translate API
-- Muestra nombre original y traducido
-- Interpretación narrativa de la imagen
-- Niveles de confianza visuales
-
-### 4. **Toggle de Contraseñas**
-- Iconos de ojo para mostrar/ocultar
-- Implementado en Login y Registro
-- Mejora la experiencia de usuario
-- Diseño consistente con Material-UI
-
-### 5. **Favicon Personalizado**
-- Diseño SVG de cámara/imagen
-- Colores corporativos (azul)
-- Responsive en diferentes navegadores
-
 ---
 
 ## 🚀 Mejoras Futuras
@@ -896,17 +862,6 @@ Este proyecto es una prueba técnica de desarrollo para evaluación de habilidad
 - 📅 Fecha: Noviembre 2024
 - 🎯 Proyecto: Prueba Técnica Kushki - Analizador Inteligente de Imágenes
 
-### Sobre el Desarrollo
-
-- ✅ Código limpio y documentado (docstrings en español)
-- ✅ Arquitectura escalable y modular
-- ✅ Seguridad multicapa implementada
-- ✅ Testing automatizado (Backend y Frontend)
-- ✅ DevOps con Docker y scripts automatizados
-- ✅ Buenas prácticas de Git (commits descriptivos)
-- ✅ Documentación completa y detallada
-
----
 
 ## 🙏 Agradecimientos
 
