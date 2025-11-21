@@ -1,0 +1,123 @@
+# ============================================
+# GITIGNORE - ANALIZADOR DE IMÁGENES KUSHKI
+# ============================================
+# Autor: Steeven Vargas
+# Fecha: Noviembre 2024
+
+# ============================================
+# SISTEMA OPERATIVO
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================
+# PYTHON / BACKEND
+# ============================================
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Base de datos
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+backend/logs/*.log
+backend/logs/*
+!backend/logs/.gitkeep
+
+# Archivos temporales de Python
+pip-log.txt
+pip-delete-this-directory.txt
+.Python
+
+# ============================================
+# NODE / FRONTEND
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+
+# Build de producción
+frontend/build/
+dist/
+
+# ============================================
+# DOCKER
+# ============================================
+# No ignorar docker-compose.yml ni Dockerfiles
+
+# ============================================
+# DATOS Y CARGAS
+# ============================================
+# Cargas de imágenes de usuarios
+backend/cargas/*
+!backend/cargas/.gitkeep
+
+# Datos de análisis persistidos
+backend/datos/*
+!backend/datos/.gitkeep
+
+# ============================================
+# CREDENCIALES (INCLUIDAS EN REPO PARA PRUEBAS)
+# ============================================
+# NOTA: Normalmente las credenciales NO deberían estar en el repo,
+# pero para esta prueba técnica se incluyen intencionalmente.
+# Las credenciales están en:
+#   - .env (Imagga API keys)
+#   - backend/credenciales/google-vision.json (Google Cloud Vision)
+
+# ============================================
+# SSL CERTIFICADOS
+# ============================================
+# Los certificados SSL autofirmados SÍ se incluyen para desarrollo
+# Se encuentran en: nginx/ssl/
+
+# ============================================
+# IDE / EDITORES
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================
+# OTROS
+# ============================================
+*.bak
+*.tmp
+*.temp

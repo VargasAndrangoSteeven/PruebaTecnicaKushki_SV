@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "careful-voyage-478804-u7",
+  "private_key_id": "6b44a02a74f39a198856733a0add693ebafac8dd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDMq6gNfRx3u1A3\nC84gtkTSx+wgpa3deLqthOPYYP+RxTciD0H0Blwq0uqIeipCcWVHj4evu11fFG7d\nCFJgxW/PeqIHVezIyEvZuI2ardkm0z0TgIhX6YX4UwUvhUaeNDsX9IqLN3wCKQvH\ni25xseTVzI7uck3q0Mn4xugEAkKgtkyL+CXzz/8nrCZVwOlQtq3uOchkOxHt4pT7\njRxsSNs8Y8In4R5ulIHqSNlol/hvGK0+AKTIBoKacQzn7VBGLqU75YUoqu99zNC4\nRTG9YzAFODfuf3EkNOy/PSSOj48EPSGIeyPk/IzmG9An6K+Jp1d21HSWJTVhI68b\nc0I2KSGjAgMBAAECggEAKYEd4S5f2X/osmD4efW8WyojnjM64NCcupdaRQTWjs75\ncTS64StxAVYoLWjorPSl3y8iCubp9mAEY1pOqkUfeWma9fXcwJKtnwcn4BglExR/\nLDdCbuFyQ3tCb/KM8YQR/7edaMHlqeJ8+wgxa2jxyNFkosIXPuj8LDDZ2AZFUKWK\nKNCsuRnT1+Rom5m5uklwzaVdGP49UHA7quz6KiIsIr0YTy5ES5MBivqvNSb78JVC\n9VuZBjfD/7CiNPz5/QdrUwbbG04gslk/AQ+Z7miAikNARMK4DEC7f5pGzD9eT9Pn\nJ1MNxWpqmP/3qXFaaHaMUhDTc7hoOkxLerDC1krAYQKBgQD1605j47CnQa7lPXID\ntsA0EIJSkZABKav7CZ3nWx+XLUA6Vk40uqndJiUpfoIolIb2CW7/jnrA5FSLQRGT\n6Ti0bIDTmjxl36GB54gtGs07K00mpPLqP+XQ0H9et1YcMB9TrdQ+QitM1gdrZxV+\nyUK+w1Y9w5NGq3HydQR2QaxImwKBgQDVD3vsBXC6mvnQ3vAPjhzxFKZ+rUXkcwyl\nNetBuG5f+OywYWCb7GhyB1yL+TjPcDdr4GtOMyyOhZiPQitPYA3bprUN+amFBjA2\nieD7RfZ7e2uAFef4Xk2mYr66bVqbpGsHO6eH5Sd4KrCP39F1rTo+AEBt03V2nPN3\nF9isTjiHmQKBgQC+mv9LVPNa8AILFDEGx+L5d8JLFR+0hwQRs0Z8R5iYqC4cCUDc\nhcGa8zHik3d21Ig2suEhmuFyGIee13Q0XJPi5CaF3AnsPAUGltppe1iO/+TwivDs\nt1H9I11VoGxRtMrTJOxYxRiimVFu4Zs7hesByI1Tmf7Qy5mp/yDSN9y8+QKBgHPK\na3204zP2/6edUXgSsvXuVCHqR17Fi+zJpeZctlegL/oXoep7i7PU/l3v/wj1opkV\nKRwhwahfQK8ytdj4ie+C5UkIEzIBT/iD7GqC9lbbl2vP+/bGQYsYhTFKNwD5VVVj\n/UNkrZOoF7bJW8uJbmq9tkY5ss/YspRZuF7EUAKZAoGABmhYxu1waQnlCcFFVFuO\nKm8D0nzEso2vnE6y9uGp+cQXqqCZuQMwseXaUjzxI5FQO3Ugy3fuFEVwLMGLtF6V\nozjOgQKTsyQVP4pbQna3ENzZoR1mGhOnKT2LOKsHpzYS4Z5yMFX/pdqS0nabqtWa\njveUR+AUp7gkbPqec4a+AKY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "kushki-steevenvargas-pruebatec@careful-voyage-478804-u7.iam.gserviceaccount.com",
+  "client_id": "108772619857974815510",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kushki-steevenvargas-pruebatec%40careful-voyage-478804-u7.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

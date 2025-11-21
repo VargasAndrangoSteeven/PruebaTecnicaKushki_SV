@@ -1,0 +1,115 @@
+# 
+# DOCKER COMPOSE - ANALIZADOR DE IMÁGENES
+# 
+# Autor: Steeven Vargas
+# Fecha: Noviembre 2024
+# Descripción: Orquestación de servicios
+# Servicios: backend, frontend, nginx
+
+version: '3.8'
+
+services:
+  # 
+  # SERVICIO BACKEND - API Flask
+  # 
+  backend:
+    container_name: analizador-backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - FLASK_ENV=${FLASK_ENV:-desarrollo}
+      - PUERTO_BACKEND=${PUERTO_BACKEND:-5077}
+      - TZ=America/Guayaquil
+    volumes:
+      # Volúmenes para persistencia de datos
+      - ./backend/datos:/app/datos
+      - ./backend/cargas:/app/cargas
+      - ./backend/credenciales:/app/credenciales:ro
+    ports:
+      - "5077:5077"
+    networks:
+      - red-analizador
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5077/api/salud"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+
+  # 
+  # SERVICIO FRONTEND - Aplicación React
+  # 
+  frontend:
+    container_name: analizador-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_API_URL=https://localhost:5001
+    environment:
+      - NODE_ENV=production
+      - REACT_APP_API_URL=https://localhost:5001
+      - TZ=America/Guayaquil
+    ports:
+      - "3001:80"
+    networks:
+      - red-analizador
+    depends_on:
+      - backend
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped
+
+  # 
+  # SERVICIO NGINX - Proxy Reverso con SSL
+  # 
+  nginx:
+    container_name: analizador-nginx
+    image: nginx:alpine
+    environment:
+      - TZ=America/Guayaquil
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    ports:
+      - "443:443"   # HTTPS Frontend
+      - "3000:3000" # Frontend directo
+      - "5001:5001" # HTTPS Backend
+    networks:
+      - red-analizador
+    depends_on:
+      - backend
+      - frontend
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+# 
+# REDES
+# 
+networks:
+  red-analizador:
+    driver: bridge
+    name: red-analizador-imagenes
+
+# 
+# VOLÚMENES NOMBRADOS (Opcional)
+# 
+volumes:
+  datos-backend:
+    driver: local
+    name: analizador-datos
+  cargas-imagenes:
+    driver: local
+    name: analizador-cargas
