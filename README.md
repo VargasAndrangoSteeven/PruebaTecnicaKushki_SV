@@ -101,17 +101,29 @@ node --version  # Opcional
 ## ⚡ Inicio Rápido
 
 ### 1️⃣ Clonar el Repositorio
-
 ```bash
+# Clonar el repositorio
 git clone https://github.com/VargasAndrangoSteeven/PruebaTecnicaKushki_SV.git
-cd PruebaTecnicaKushki_SV_CON_CAPTCHA
+cd PruebaTecnicaKushki_SV
+
+# Descargar todas las ramas
+git fetch --all
+
+# Ver ramas disponibles
+git branch -a
 ```
+
+**Estructura de ramas:**
+- `main` - Código integrado y funcional
+- `feature/backend-api` - Desarrollo del backend (3 commits)
+- `feature/frontend-ui` - Desarrollo del frontend (1 commit)
+- `feature/testing-cicd` - Tests y CI/CD (1 commit)
 
 ### 2️⃣ Configurar Credenciales de Google Cloud Vision
 
 **Importante:** Coloca tu archivo de credenciales JSON de Google Cloud en:
 ```
-backend/credenciales/google-vision.json
+backend/credenciales/google-vision.json  - YA SE ENCUENTRAN PRECONFIGURADAS EN EL PROYECTO
 ```
 
 Si no tienes credenciales, la aplicación usará Imagga API automáticamente.
