@@ -166,7 +166,7 @@ La aplicación estará disponible en:
 
 ```
 Usuario: admin2025
-Contraseña: Admin2025.
+Contraseña: pass2025
 ```
 
 ---
